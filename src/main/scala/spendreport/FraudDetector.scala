@@ -104,7 +104,7 @@ class FraudDetector extends KeyedProcessFunction[Long, Transaction, Alert] {
    * 加工时间为挂钟时间，由操作者运行机器的系统时钟决定。
    * 当计时器触发时，它调用KeyedProcessFunction#onTimer。重写此方法是实现回调来重置标志的方法。
    *
-   * @param timestamp
+   * @param timestamp 时间戳
    * @param ctx
    * @param out
    */
